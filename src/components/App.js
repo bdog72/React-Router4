@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import BasicExample1 from './Example1'
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 
 class App extends Component {
@@ -32,7 +32,7 @@ const BasicExample = () => (
 
 const Ex1 = () => (
   <div>
-    <h2>example 1</h2>
+    <BasicExample1 />
   </div>
 )
 
