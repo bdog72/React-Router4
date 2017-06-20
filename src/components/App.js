@@ -16,18 +16,24 @@ const BasicExample = () => (
   <Router>
     <div>
       <ul>
-        <li><Link to='/'>Example1</Link></li>
-        <li><Link to='/ex2'>Example2</Link></li>
-        <li><Link to='/ex3'>Example3</Link></li>
+        <li><Link to='/'>HOME</Link></li>
+        <li><Link to='/ex1'>Example1</Link></li>
+        <li><Link to='/ex3'>Example2</Link></li>
       </ul>
 
       <hr />
 
-      <Route exact path='/' component={Ex1} />
-      <Route path='/ex2' component={Ex2} />
+      <Route exact path='/' component={Home} />
+      <Route path='/ex1' component={Ex1} />
       <Route path='/ex3' component={Ex3} />
     </div>
   </Router>
+)
+
+const Home = () => (
+  <div>
+    <h1>REACT ROUTER 4</h1>
+  </div>
 )
 
 const Ex1 = () => (
@@ -36,14 +42,8 @@ const Ex1 = () => (
   </div>
 )
 
-const Ex2 = () => (
-  <div>
-    <h2>example 2</h2>
-  </div>
-)
-
 const Ex3 = () => (
   <div>
-    <h2>example 3</h2>
+    <h2>example 2</h2>
   </div>
 )
