@@ -36,7 +36,7 @@ const BasicExample = () => (
 
 const Home = () => (
   <div>
-    <h1>REACT ROUTER 4</h1>
+    <h1 className='homeHeader'>REACT ROUTER 4</h1>
   </div>
 )
 
