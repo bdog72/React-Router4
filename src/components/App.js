@@ -3,6 +3,7 @@ import BasicExample1 from './Example1'
 import ParamsExample from './Example2'
 import AuthExample from './Example3'
 import CustomLinkExample from './Example4'
+import PreventingTransitionsExample from './Example5'
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 
 class App extends Component {
@@ -24,6 +25,7 @@ const BasicExample = () => (
         <li><Link to='/ex2'>Example2</Link></li>
         <li><Link to='/ex3'>Example3</Link></li>
         <li><Link to='/ex4'>Example4</Link></li>
+        <li><Link to='/ex5'>Example5</Link></li>
       </ul>
 
       <hr />
@@ -33,6 +35,7 @@ const BasicExample = () => (
       <Route path='/ex2' component={Ex2} />
       <Route path='/ex3' component={Ex3} />
       <Route path='/ex4' component={Ex4} />
+      <Route path='/ex5' component={Ex5} />
     </div>
   </Router>
 )
@@ -64,5 +67,11 @@ const Ex3 = () => (
 const Ex4 = () => (
   <div>
     <CustomLinkExample />
+  </div>
+)
+
+const Ex5 = () => (
+  <div>
+    <PreventingTransitionsExample />
   </div>
 )
