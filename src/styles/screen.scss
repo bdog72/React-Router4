@@ -11,6 +11,7 @@ body {
   margin: 30px;
   font: $base-text-size / 1 $base-font-family;
   font-size: 2vw;
+  background: #6f6e5b;
 }
 
 .homeHeader {
@@ -18,8 +19,12 @@ body {
   font-size: 7vw;
 }
 
-// li a {
-//   padding: 5px;
-//   text-decoration: none;
-//   color: rgb(235, 20, 59);
-// }
+li {
+  padding: 5px;
+}
+
+li a {
+  padding: 5px;
+  text-decoration: none;
+  color: white;
+}
