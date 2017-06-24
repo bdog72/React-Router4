@@ -4,6 +4,7 @@ import ParamsExample from './Example2'
 import AuthExample from './Example3'
 import CustomLinkExample from './Example4'
 import PreventingTransitionsExample from './Example5'
+import NoMatchExample from './Example6'
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 
 class App extends Component {
@@ -26,6 +27,7 @@ const BasicExample = () => (
         <li><Link to='/ex3'>Example3</Link></li>
         <li><Link to='/ex4'>Example4</Link></li>
         <li><Link to='/ex5'>Example5</Link></li>
+        <li><Link to='/ex6'>Example6</Link></li>
       </ul>
 
       <hr />
@@ -36,6 +38,7 @@ const BasicExample = () => (
       <Route path='/ex3' component={Ex3} />
       <Route path='/ex4' component={Ex4} />
       <Route path='/ex5' component={Ex5} />
+      <Route path='/ex6' component={Ex6} />
     </div>
   </Router>
 )
@@ -73,5 +76,11 @@ const Ex4 = () => (
 const Ex5 = () => (
   <div>
     <PreventingTransitionsExample />
+  </div>
+)
+
+const Ex6 = () => (
+  <div>
+    <NoMatchExample />
   </div>
 )
