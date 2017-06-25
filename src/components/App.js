@@ -5,7 +5,10 @@ import AuthExample from './Example3'
 import CustomLinkExample from './Example4'
 import PreventingTransitionsExample from './Example5'
 import NoMatchExample from './Example6'
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
+import SidebarExample from './Example7'
+import { BrowserRouter as Router,
+  Route, Link }
+  from 'react-router-dom'
 
 class App extends Component {
   render () {
@@ -22,12 +25,13 @@ const BasicExample = () => (
     <div>
       <ul>
         <li><Link to='/'>HOME</Link></li>
-        <li><Link to='/ex1'>Example1</Link></li>
-        <li><Link to='/ex2'>Example2</Link></li>
-        <li><Link to='/ex3'>Example3</Link></li>
-        <li><Link to='/ex4'>Example4</Link></li>
-        <li><Link to='/ex5'>Example5</Link></li>
-        <li><Link to='/ex6'>Example6</Link></li>
+        <li><Link to='/ex1'>Example 1</Link></li>
+        <li><Link to='/ex2'>Example 2</Link></li>
+        <li><Link to='/ex3'>Example 3</Link></li>
+        <li><Link to='/ex4'>Example 4</Link></li>
+        <li><Link to='/ex5'>Example 5</Link></li>
+        <li><Link to='/ex6'>Example 6</Link></li>
+        <li><Link to='/ex7'>Example 7</Link></li>
       </ul>
 
       <hr />
@@ -39,6 +43,7 @@ const BasicExample = () => (
       <Route path='/ex4' component={Ex4} />
       <Route path='/ex5' component={Ex5} />
       <Route path='/ex6' component={Ex6} />
+      <Route path='/ex7' component={Ex7} />
     </div>
   </Router>
 )
@@ -82,5 +87,11 @@ const Ex5 = () => (
 const Ex6 = () => (
   <div>
     <NoMatchExample />
+  </div>
+)
+
+const Ex7 = () => (
+  <div>
+    <SidebarExample />
   </div>
 )
