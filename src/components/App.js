@@ -23,16 +23,29 @@ export default App
 const BasicExample = () => (
   <Router>
     <div>
-      <ul>
-        <li><Link to='/'>HOME</Link></li>
-        <li><Link to='/ex1'>Example 1</Link></li>
-        <li><Link to='/ex2'>Example 2</Link></li>
-        <li><Link to='/ex3'>Example 3</Link></li>
-        <li><Link to='/ex4'>Example 4</Link></li>
-        <li><Link to='/ex5'>Example 5</Link></li>
-        <li><Link to='/ex6'>Example 6</Link></li>
-        <li><Link to='/ex7'>Example 7</Link></li>
-      </ul>
+      <div className='routes'>
+        <ul>
+          <li><Link to='/'>HOME</Link></li>
+          <li><Link to='/ex1'>Example 1</Link></li>
+          <li><Link to='/ex2'>Example 2</Link></li>
+          <li><Link to='/ex3'>Example 3</Link></li>
+          <li><Link to='/ex4'>Example 4</Link></li>
+          <li><Link to='/ex5'>Example 5</Link></li>
+          <li><Link to='/ex6'>Example 6</Link></li>
+          <li><Link to='/ex7'>Example 7</Link></li>
+        </ul>
+      </div>
+
+      {/* <div className='routes'>
+        <Link to='/'>HOME</Link>
+        <Link to='/ex1'>Example 1</Link>
+        <Link to='/ex2'>Example 2</Link>
+        <Link to='/ex3'>Example 3</Link>
+        <Link to='/ex4'>Example 4</Link>
+        <Link to='/ex5'>Example 5</Link>
+        <Link to='/ex6'>Example 6</Link>
+        <Link to='/ex7'>Example 7</Link>
+      </div>  */}
 
       <hr />
 

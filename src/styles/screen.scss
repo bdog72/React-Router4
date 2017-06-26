@@ -19,14 +19,15 @@ body {
   font-size: 7vw;
 }
 
-li {
-  padding: 5px;
+.routes ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style: none;
 }
 
-li a {
-  padding: 5px;
-  text-decoration: none;
-  color: white;
+.routes li {
+  padding: 10px;
 }
 
 .example7 a {
