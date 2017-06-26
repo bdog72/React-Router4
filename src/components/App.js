@@ -36,17 +36,6 @@ const BasicExample = () => (
         </ul>
       </div>
 
-      {/* <div className='routes'>
-        <Link to='/'>HOME</Link>
-        <Link to='/ex1'>Example 1</Link>
-        <Link to='/ex2'>Example 2</Link>
-        <Link to='/ex3'>Example 3</Link>
-        <Link to='/ex4'>Example 4</Link>
-        <Link to='/ex5'>Example 5</Link>
-        <Link to='/ex6'>Example 6</Link>
-        <Link to='/ex7'>Example 7</Link>
-      </div>  */}
-
       <hr />
 
       <Route exact path='/' component={Home} />

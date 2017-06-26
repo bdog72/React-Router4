@@ -10,7 +10,7 @@ html {
 body {
   margin: 30px;
   font: $base-text-size / 1 $base-font-family;
-  font-size: 2vw;
+  font-size: 3vw;
   background: #6f6e5b;
 }
 
@@ -28,6 +28,11 @@ body {
 
 .routes li {
   padding: 10px;
+  color: red;
+}
+
+li a {
+  color: white;
 }
 
 .example7 a {
