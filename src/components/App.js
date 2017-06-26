@@ -6,6 +6,7 @@ import CustomLinkExample from './Example4'
 import PreventingTransitionsExample from './Example5'
 import NoMatchExample from './Example6'
 import SidebarExample from './Example7'
+import AnimationExample from './Example8'
 import { BrowserRouter as Router,
   Route, Link }
   from 'react-router-dom'
@@ -33,6 +34,8 @@ const BasicExample = () => (
           <li><Link to='/ex5'>Example 5</Link></li>
           <li><Link to='/ex6'>Example 6</Link></li>
           <li><Link to='/ex7'>Example 7</Link></li>
+          <li><Link to='/ex8'>Example 8</Link></li>
+
         </ul>
       </div>
 
@@ -46,6 +49,7 @@ const BasicExample = () => (
       <Route path='/ex5' component={Ex5} />
       <Route path='/ex6' component={Ex6} />
       <Route path='/ex7' component={Ex7} />
+      <Route path='/ex8' component={Ex8} />
     </div>
   </Router>
 )
@@ -95,5 +99,11 @@ const Ex6 = () => (
 const Ex7 = () => (
   <div>
     <SidebarExample />
+  </div>
+)
+
+const Ex8 = () => (
+  <div>
+    <AnimationExample />
   </div>
 )
