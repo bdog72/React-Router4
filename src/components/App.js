@@ -8,6 +8,7 @@ import NoMatchExample from './Example6'
 import SidebarExample from './Example7'
 import AnimationExample from './Example8'
 import AmbiguousExample from './Example9'
+import RouteConfigExample from './Example10.js'
 import { BrowserRouter as Router,
   Route, Link }
   from 'react-router-dom'
@@ -37,6 +38,7 @@ const BasicExample = () => (
           <li><Link to='/ex7'>Example 7</Link></li>
           <li><Link to='/ex8'>Example 8</Link></li>
           <li><Link to='/ex9'>Example 9</Link></li>
+          <li><Link to='/ex10'>Example 10</Link></li>
         </ul>
       </div>
 
@@ -52,6 +54,7 @@ const BasicExample = () => (
       <Route path='/ex7' component={Ex7} />
       <Route path='/ex8' component={Ex8} />
       <Route path='/ex9' component={Ex9} />
+      <Route path='/ex10' component={Ex10} />
     </div>
   </Router>
 )
@@ -113,5 +116,11 @@ const Ex8 = () => (
 const Ex9 = () => (
   <div>
     <AmbiguousExample />
+  </div>
+)
+
+const Ex10 = () => (
+  <div>
+    <RouteConfigExample />
   </div>
 )
